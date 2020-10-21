@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.027f859c.chunk.css",
-    "main.js": "/portfolio/static/js/main.1246cc90.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1246cc90.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.2880c69d.chunk.css",
+    "main.js": "/portfolio/static/js/main.21eda646.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.21eda646.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.4b35b389.chunk.css": "/portfolio/static/css/2.4b35b389.chunk.css",
-    "static/js/2.145b6737.chunk.js": "/portfolio/static/js/2.145b6737.chunk.js",
-    "static/js/2.145b6737.chunk.js.map": "/portfolio/static/js/2.145b6737.chunk.js.map",
+    "static/js/2.37835230.chunk.js": "/portfolio/static/js/2.37835230.chunk.js",
+    "static/js/2.37835230.chunk.js.map": "/portfolio/static/js/2.37835230.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.3b691e8588aa2ba92fa596c9fca05766.js": "/portfolio/precache-manifest.3b691e8588aa2ba92fa596c9fca05766.js",
+    "precache-manifest.51b4afd73570bb59634fd9a3290e9c2f.js": "/portfolio/precache-manifest.51b4afd73570bb59634fd9a3290e9c2f.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.4b35b389.chunk.css.map": "/portfolio/static/css/2.4b35b389.chunk.css.map",
-    "static/css/main.027f859c.chunk.css.map": "/portfolio/static/css/main.027f859c.chunk.css.map",
-    "static/js/2.145b6737.chunk.js.LICENSE.txt": "/portfolio/static/js/2.145b6737.chunk.js.LICENSE.txt",
+    "static/css/main.2880c69d.chunk.css.map": "/portfolio/static/css/main.2880c69d.chunk.css.map",
+    "static/js/2.37835230.chunk.js.LICENSE.txt": "/portfolio/static/js/2.37835230.chunk.js.LICENSE.txt",
     "static/media/ep.JPG": "/portfolio/static/media/ep.6016a94f.JPG",
     "static/media/logo.svg": "/portfolio/static/media/logo.6e251a6f.svg",
     "static/media/index.css": "/portfolio/static/media/montserrat-vietnamese-400-normal.8c255c10.woff2"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.4b35b389.chunk.css",
-    "static/js/2.145b6737.chunk.js",
-    "static/css/main.027f859c.chunk.css",
-    "static/js/main.1246cc90.chunk.js"
+    "static/js/2.37835230.chunk.js",
+    "static/css/main.2880c69d.chunk.css",
+    "static/js/main.21eda646.chunk.js"
   ]
 }
