@@ -27,43 +27,34 @@ class DataController extends Component {
 
         this.state = {
             data: [],
-            portfolio: [],
+            page: [],
             headers: [],
             isLoaded: false,
         };
     }
 
-    async componentDidMount() {
+    componentDidMount() {
         if(!this.state.isLoaded){
             let type = this.props.type;
             let thisItem = dataMap.filter(function(dataItem){
                 return dataItem.sheetType === type;
-            });
-            await this.getData( thisItem[0].sheet - 1 );
-            //const data = await this.getData()
-            //this.setState({ portfolio: data });
-        } else{
-            this.parseData(this.props.type);
+            })[0];
+            this.getData( thisItem.sheet - 1);
         }
     }
-    async getData(sheetIndex) {
-        fetch(`api/data?sheet=${String(sheetIndex)}`)
+    async getData(sheet) {
+        fetch(`https://la-paix.herokuapp.com/portfolio?sheet=${String(sheet)}`)
         .then(response => { 
             if(response.ok) return response.json();
         }).then(json => {
-            this.setState({portfolio: json});
-            this.parseData(this.props.type);
+            this.setState({page: json});
+            this.parseData();
         });
     }
 
-    parseData(type) {
-        /* debugger;
-        let thisItem = dataMap.filter(function(dataItem){
-            return dataItem.sheetType === type;
-        });
-        let sheetIndex = thisItem[0].sheet; */
-        let data = this.state.portfolio.sheetData;
-        //console.log(data);
+    parseData() {
+        let data = this.state.page.sheetData;
+        console.log(data);
         this.setState({
             data: data.rows,
             headers: data.columns
@@ -73,7 +64,6 @@ class DataController extends Component {
 
     renderLoader(content){
         return (
-            //content = <CircularProgress />
             content =
                 <div className="flex items-center justify-center h-5">
                     <svg className="animate-spin h-5 w-5 mr-3 text-center" viewBox="0 0 24 24">
@@ -102,7 +92,6 @@ class DataController extends Component {
         if (isLoaded) {
             switch(portfolioItem.type){
                 case "projects":
-                    //content = this.renderProjects()
                     content = <Projects data={this.state.data}/>
                     break;
                 case "work":
@@ -118,6 +107,9 @@ class DataController extends Component {
                     break;
             }
         }
+        /* else{
+            content = <h5 className='content-center font-semibold'>Doh! I'm currently working on updating my portfolio. Please check back soon... </h5>
+        } */
         return (
             <div>
                 {content}
