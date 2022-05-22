@@ -22,7 +22,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="flex flex-wrap items-center mt-18 h-100">
+      <div className="flex flex-wrap items-center mt-16 h-100">
         <div className="w-full sm:w-1/2 max-h-screen">
           {
             <img
@@ -32,7 +32,7 @@ function App() {
             />
           }
         </div>
-        <div className="w-full sm:w-1/2 app-contours py-36 max-h-screen content-center">
+        <div className="w-full sm:w-1/2 app-contours py-44 max-h-screen content-center">
           <div className="text-center">
             <h1 className="font-semibold text-4xl text-ep-blue-dark">
               Emma Lu
